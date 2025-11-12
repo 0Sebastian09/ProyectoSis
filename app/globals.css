@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+
 @custom-variant dark (&:is(.dark *));
 
 /* Forest-themed pixel art color palette */
@@ -150,7 +151,6 @@
 }
 
 /* Pixel art font import */
-@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
 /* Pixel art animations */
 @keyframes float {
@@ -257,7 +257,7 @@
 }
 
 .pixel-text {
-  font-family: "Press Start 2P", monospace;
+  font-family: var(--font-press-start), monospace;
   line-height: 1.6;
   letter-spacing: 0.05em;
 }
